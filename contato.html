@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato — Beli</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">Beli<span>.</span></a>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="projetos.html">Projetos</a>
+        <a class="active" href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-head">
+    <h1>Contato</h1>
+    <p>Fico feliz em conversar! Me chame por e-mail ou nas redes sociais abaixo.</p>
+
+    <div class="contact-cards">
+      <a class="contact-card" href="mailto:isabeleferreira@colegiopaulodetarso.com.br">
+        <span class="contact__icon">📧</span>
+        <div>
+          <strong>E-mail</strong>
+          <span>isabeleferreira@colegiopaulodetarso.com.br</span>
+        </div>
+      </a>
+
+      <a class="contact-card" href="https://instagram.com/belifl" target="_blank">
+        <span class="contact__icon">📷</span>
+        <div>
+          <strong>Instagram</strong>
+          <span>@belifl</span>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Beli — Feito com ♥</p>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>

@@ -1,24 +1,56 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Meus Projetos</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projetos — Beli</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <h1>Projetos</h1>
-        <a href="index.html" class="botao">Voltar</a>
-    </header>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">Beli<span>.</span></a>
+      <nav>
+        <a href="index.html">Início</a>
+        <a class="active" href="projetos.html">Projetos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <section class="projeto">
-            <h2>Portfólio Pessoal</h2>
-            <img src="img/projeto1.png" alt="Imagem do Projeto">
-            <p>Site pessoal criado com HTML, CSS e um pouco de JavaScript para praticar meus conhecimentos.</p>
-            <p><strong>Tecnologias:</strong> HTML, CSS, JS</p>
-            <a href="#" class="botao">Ver mais</a>
-        </section>
-    </main>
+  <main class="container">
+    <section class="page-head">
+      <h1>Projetos</h1>
+      <p>Aqui estão alguns projetos (reais e fictícios) para mostrar o que estou estudando.</p>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <img src="img/projeto1.svg" alt="Mockup simples do projeto Diário da Beli" />
+        <div class="card__content">
+          <h3>Diário da Beli</h3>
+          <p>Um mini site para registrar estudos diários. Possui páginas para anotações, metas da semana e uma galeria de referências.</p>
+          <ul class="techs">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <div class="btns">
+            <a class="btn" href="#">Ver mais</a>
+            <a class="btn btn--outline" href="#">Código (em breve)</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Beli — Feito com ♥</p>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>

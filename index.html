@@ -1,40 +1,54 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Meu Portfólio - [Seu Nome]</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beli • Portfólio</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <h1>[Seu Nome]</h1>
-        <p>Desenvolvedor(a) Front-end em formação</p>
-    </header>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">Beli<span>.</span></a>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <img src="img/avatar.png" alt="Minha Foto" class="avatar">
+  <main class="container hero">
+    <div class="hero__text">
+      <h1>Oi, eu sou a <span class="accent">Beli</span> 👋</h1>
+      <p>Sou estudante e estou começando meu primeiro portfólio. Adoro aprender tecnologia e estou praticando <strong>HTML, CSS e JavaScript</strong>.</p>
+      <div class="btns">
+        <a class="btn" href="projetos.html">Ver projetos</a>
+        <a class="btn btn--outline" href="contato.html">Falar comigo</a>
+      </div>
+      <section class="skills">
+        <h2>Habilidades</h2>
+        <ul class="tags">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript (básico)</li>
+          <li>Git/GitHub (básico)</li>
+          <li>Design básico</li>
+        </ul>
+      </section>
+    </div>
+    <div class="hero__img">
+      <img src="img/avatar.svg" alt="Avatar ilustrado de uma menina (Beli)" />
+    </div>
+  </main>
 
-        <section>
-            <h2>Sobre mim</h2>
-            <p>Olá! Eu sou [Seu Nome], estudante e entusiasta de tecnologia. Estou aprendendo desenvolvimento web e construindo meus primeiros projetos com HTML, CSS e JavaScript.</p>
-        </section>
-
-        <section>
-            <h2>Minhas Habilidades</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </section>
-
-        <nav>
-            <a href="projetos.html" class="botao">Projetos</a>
-            <a href="contato.html" class="botao">Contato</a>
-            <a href="curriculo.html" class="botao">Currículo</a>
-        </nav>
-    </main>
-
-    <script src="js/script.js"></script>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Beli — Feito com ♥</p>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
