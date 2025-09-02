@@ -10,7 +10,7 @@
   <header class="site-header">
     <div class="container nav">
       <a href="index.html" class="logo">Beli<span>.</span></a>
-      <nav>
+      <nav class="nav__links">
         <a href="index.html">Início</a>
         <a class="active" href="projetos.html">Projetos</a>
         <a href="contato.html">Contato</a>
@@ -21,24 +21,42 @@
   <main class="container">
     <section class="page-head">
       <h1>Projetos</h1>
-      <p>Aqui estão alguns projetos  para mostrar o que estou estudando e praticando.</p>
-      <p>Tenho experiência em diversas linguagens de programação e frameworks, como JavaScript, Python, HTML, CSS, além de frameworks como React e Node.js. Também trabalho com o desenvolvimento de sites e sistemas, com foco em performance e design responsivo.</p>
-      <p>Exemplo de um dos projetos que desenvolvi: <a href="https://github.com/beli10k/Desenvolvimento-de-Sistemas---Recupera-o-Trimestral" target="_blank" rel="noopener noreferrer">Recuperação Trimestral</a>, um sistema que visa organizar e recuperar informações acadêmicas de maneira eficiente.</p>
+      <p>
+        Esta seção apresenta alguns projetos desenvolvidos com o objetivo de aplicar
+        e consolidar conhecimentos em desenvolvimento web. Cada trabalho busca
+        integrar fundamentos de estrutura, estilo e interatividade.
+      </p>
+      <p>
+        Tenho explorado linguagens e ferramentas como <strong>JavaScript</strong>,
+        <strong>Python</strong>, <strong>React</strong> e <strong>Node.js</strong>,
+        reforçando sempre as bases de <strong>HTML</strong> e <strong>CSS</strong>
+        para garantir acessibilidade e responsividade.
+      </p>
+      <p>
+        Exemplo em destaque:
+        <a href="https://github.com/beli10k/Desenvolvimento-de-Sistemas---Recupera-o-Trimestral"
+           target="_blank" rel="noopener noreferrer">Recuperação Trimestral</a>,
+        um sistema voltado à organização de informações acadêmicas.
+      </p>
     </section>
 
     <section class="cards">
       <article class="card">
-        <img src="img/projeto1.svg" alt="Mockup simples do projeto Diário da Beli" />
+        <img class="card__img" src="fotos/fotosite.webp" alt="Mockup do projeto Diário da Beli" />
         <div class="card__content">
           <h3>Diário da Beli</h3>
-          <p>Um mini site para registrar estudos diários. Possui páginas para anotações, metas da semana e uma galeria de referências.</p>
+          <p>
+            Projeto destinado ao registro de estudos diários, com páginas voltadas para
+            anotações, metas semanais e uma galeria de referências. Exercício importante
+            para a prática de tipografia, navegação e elementos interativos.
+          </p>
           <ul class="techs">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
           </ul>
           <div class="btns">
-            <a class="btn" href="#">Ver mais</a>
+            <a class="btn" href="#">Ver detalhes</a>
             <a class="btn btn--outline" href="#">Código (em breve)</a>
           </div>
         </div>
@@ -48,7 +66,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Beli — Feito com ♥</p>
+      <p>© <span id="year"></span> Beli — Portfólio </p>
     </div>
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
